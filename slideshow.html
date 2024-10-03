@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>SlideShow</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        <!--<input +label {color:blue;}>-->
+        input: hover + label{color:red;}
+        input:checked + label {color: green;}
+        .slideshow
+        {
+            position: relative;
+            height: 400px;
+            width:400px;
+            margin:auto;
+        }
+
+        .slide{
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            position:absolute;
+            transition:opacity 2s;
+         }
+
+         .show + :checked
+
+
+         .btn-label
+         {
+            font-size: 15px;
+            background-color: black;
+            color:white;
+            display: block;
+            text-align: center;
+            border-radius: .5rem;
+            cursor: pointer;
+            transition:background 2s;
+            
+         }
+
+        input{}
+         
+    </style>
+</head>
+<body>
+    <input type="checkbox" name="selected">
+    <label for="selected">click to select</label>
+    <div class="frame">
+        <h2>Slidehow of Flowers</h2>
+        <div class="slideshow">
+            <input type="radio" name="btn" class="show" id="one" checked>
+            <div class="slide"><a target="blank" title="FlowerOne" href="Image1.jpg">
+            <img width="512" alt="Pink Flower" src="Image1.jpg">
+        </a>
+        </div>
+            <input type="radio" name="btn" class="show" id="Two">
+            <div class="slide"><a target="blank" title="Flower2" href="Image1.jpg">
+            <img width="512" alt=" Flower" src="Image2.jpg">
+        
+            <input type="radio" name="btn" class="show" id="Three">
+            <div class="slide"><a target="blank" title="Flower3" href="image3.png">
+            <img width="512" alt="Horid Henryr" src="Image3.jpg">
+        </div>
+    </div>
+    <li class="button"><label class="btn-label</li>
+</body>
+</html>
