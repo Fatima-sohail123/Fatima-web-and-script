@@ -1,0 +1,9 @@
+@media only screen and (min-width: 1025px) {
+    .topnav a {
+        padding: 16px 20px;
+    }
+
+    .content {
+        padding: 20px;
+    }
+}

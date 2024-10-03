@@ -1,0 +1,11 @@
+@media only screen and (max-width: 600px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+        text-align: left;
+    }
+
+    .content {
+        padding: 10px;
+    }
+}
