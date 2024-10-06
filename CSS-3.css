@@ -46,7 +46,7 @@ select {
     border-radius: 4px;
     text-align: center;
 }
-
+/*to make the submit button green*/
 input[type="submit"] {
     background-color: #5cb85c;
     color: white;
@@ -58,7 +58,7 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: #4cae4c;
 }
-
+/*to make a large text box for the commenting section in the contact form*/
 input[type="comments"],
 textarea,
 select {
@@ -70,12 +70,14 @@ select {
     text-align: center;
 }
 
+/*for the color of the navigation bar*/
 .topnav {
     background-color: #225faf;
     overflow: hidden;
     position: relative;
 }
 
+/*To make the navigation bar on the left side of the page*/
 .topnav a {
     float: left;
     display: block;
@@ -85,12 +87,6 @@ select {
     text-decoration: none;
 }
 
-.topnav img {
-    width: 70px; /* Set a uniform width for the images */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 8px; /* Rounded corners for the image */
-    left: 0%; 
-}
 
 .topnav a:hover {
     background-color: #ddd;
@@ -98,11 +94,12 @@ select {
     margin-center: 20px ;
 }
 
+/*to position the logo in the middle*/
 .logo {
-    position: absolute; /* Position the logo */
+    position: center; /* Position the logo */
     /*center: 5px; /* Adjust as needed */
     center: 50px; /* Adjust as needed */
-    width: 5px; /* Adjust the size */
+    width: 300px; /* Adjust the size */
     height: auto; /* Maintain aspect ratio */
 }
 
