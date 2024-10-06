@@ -1,4 +1,4 @@
-
+/*To make the body and the background color the same on every page*/
 body {
     font-size: large;
     font-family: 'Times New Roman', Times, serif;
@@ -6,6 +6,8 @@ body {
     background-origin:white;
     text-align: center;
 }
+
+/*to make the header 1 in eachother page this specific layout*/
 h1 {
     Color: rgb(0, 13, 255);
     text-align: center;
@@ -34,7 +36,7 @@ p {
     margin: 20px 0;
 }
 
-
+/* to make the text and email text boxes of the form*/
 input[type="text"],
 input[type="email"],
 textarea,
@@ -96,17 +98,17 @@ select {
 
 /*to position the logo in the middle*/
 .logo {
-    position: center; /* Position the logo */
-    /*center: 5px; /* Adjust as needed */
-    center: 50px; /* Adjust as needed */
-    width: 300px; /* Adjust the size */
-    height: auto; /* Maintain aspect ratio */
+    position: center; 
+    center: 50px; 
+    width: 300px; 
+    height: auto; 
 }
 
 .content {
     padding: 20px;
 }
 
+/*footer of the pages*/
 footer {
     background-color: #4f20e9;
     color: white;
@@ -120,39 +122,40 @@ footer {
     z-index: 1000;
 }
 
+/*Helps with the placement of the pictures on the projects page*/
 .container {
-    display: flex; /* Use flexbox to arrange items in a row */
-    justify-content: center; /* Center items horizontally */
-    align-items: center; /* Center items vertically */
-    margin-top: 20px; /* Optional margin for spacing */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin-top: 20px; 
 }
 
 .left-side,
 .right-side {
-    margin: 0 20px; /* Space between items */
-    text-align: center; /* Center the text under the images */
+    margin: 0 20px; 
+    text-align: center; 
 }
 
-/* Image Styles */
+
 .left-side img,
 .right-side img {
-    width: 200px; /* Set a uniform width for the images */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 8px; /* Rounded corners for the image */
+    width: 200px; 
+    height: auto; 
+    border-radius: 8px; 
 }
 
-/* Link Styles */
+
 .left-side a,
 .right-side a {
-    display: block; /* Block-level link */
-    margin: 10px 0; /* Margin between links */
-    color: #333; /* Dark text color */
-    text-decoration: none; /* No underline */
+    display: block; 
+    margin: 10px 0;
+    color: #333; 
+    text-decoration: none; 
 }
 
 .left-side a:hover,
 .right-side a:hover {
-    text-decoration: underline; /* Underline on hover */
+    text-decoration: underline; 
 }
 
 video{
@@ -164,3 +167,11 @@ button{
     color: rgb(49, 37, 185);
 }
 
+.middle-right {
+    position: absolute; 
+    top: 50%; 
+    right: 20px; 
+    transform: translateY(-50%); 
+    width: 300px; 
+    text-align: left; 
+}

@@ -8,7 +8,7 @@
     .content {
         padding: 10px;
     }
-}
+/*To make the body and the background color the same on every page*/
 body {
     font-size: large;
     font-family: 'Times New Roman', Times, serif;
@@ -16,12 +16,15 @@ body {
     background-origin:white;
     text-align: center;
 }
+
+/*to make the header 1 in eachother page this specific layout*/
 h1 {
     Color: rgb(0, 13, 255);
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     margin: 0;
     padding: 20px;
+    text-decoration:underline;
 
 }
 
@@ -43,7 +46,7 @@ p {
     margin: 20px 0;
 }
 
-
+/* to make the text and email text boxes of the form*/
 input[type="text"],
 input[type="email"],
 textarea,
@@ -55,7 +58,7 @@ select {
     border-radius: 4px;
     text-align: center;
 }
-
+/*to make the submit button green*/
 input[type="submit"] {
     background-color: #5cb85c;
     color: white;
@@ -67,7 +70,7 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: #4cae4c;
 }
-
+/*to make a large text box for the commenting section in the contact form*/
 input[type="comments"],
 textarea,
 select {
@@ -79,29 +82,43 @@ select {
     text-align: center;
 }
 
+/*for the color of the navigation bar*/
 .topnav {
     background-color: #225faf;
     overflow: hidden;
+    position: relative;
 }
 
+/*To make the navigation bar on the left side of the page*/
 .topnav a {
     float: left;
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 12px 16px;
     text-decoration: none;
 }
+
 
 .topnav a:hover {
     background-color: #ddd;
     color: rgb(6, 107, 118);
+    margin-center: 20px ;
+}
+
+/*to position the logo in the middle*/
+.logo {
+    position: center; 
+    center: 50px; 
+    width: 300px; 
+    height: auto; 
 }
 
 .content {
     padding: 20px;
 }
 
+/*footer of the pages*/
 footer {
     background-color: #4f20e9;
     color: white;
@@ -115,77 +132,56 @@ footer {
     z-index: 1000;
 }
 
-h2 {
-    Color: rgb(47, 148, 179);
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    margin: 0;
-    padding: 20px;
-
-}
-
+/*Helps with the placement of the pictures on the projects page*/
 .container {
-    display: flex; /* Use flexbox to arrange items in a row */
-    justify-content: center; /* Center items horizontally */
-    align-items: center; /* Center items vertically */
-    margin-top: 20px; /* Optional margin for spacing */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin-top: 20px; 
 }
 
 .left-side,
 .right-side {
-    margin: 0 20px; /* Space between items */
-    text-align: center; /* Center the text under the images */
+    margin: 0 20px; 
+    text-align: center; 
 }
 
-/* Image Styles */
+
 .left-side img,
 .right-side img {
-    width: 200px; /* Set a uniform width for the images */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 8px; /* Rounded corners for the image */
+    width: 200px; 
+    height: auto; 
+    border-radius: 8px; 
 }
 
-/* Link Styles */
+
 .left-side a,
 .right-side a {
-    display: block; /* Block-level link */
-    margin: 10px 0; /* Margin between links */
-    color: #333; /* Dark text color */
-    text-decoration: none; /* No underline */
+    display: block; 
+    margin: 10px 0;
+    color: #333; 
+    text-decoration: none; 
 }
 
 .left-side a:hover,
 .right-side a:hover {
-    text-decoration: underline; /* Underline on hover */
+    text-decoration: underline; 
 }
 
-/* Define the animation */
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px); /* Start lower */
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0); /* End at original position */
-    }
+video{
+    display: flex;
 }
 
-/* Apply the animation to the left-side and right-side elements */
-.left-side, .right-side {
-    animation: fadeInUp 0.5s ease forwards; /* Apply animation */
-    opacity: 0; /* Start hidden for animation */
+button{
+    display: flex;
+    color: rgb(49, 37, 185);
 }
 
-/* Add a delay for each left-side element to create a staggered effect */
-.left-side:nth-child(1) {
-    animation-delay: 0.2s; /* First element */
-}
-
-.left-side:nth-child(2) {
-    animation-delay: 0.4s; /* Second element */
-}
-
-.right-side {
-    animation-delay: 0.6s; /* Third element */
+.middle-right {
+    position: absolute; 
+    top: 50%; 
+    right: 20px; 
+    transform: translateY(-50%); 
+    width: 300px; 
+    text-align: left; 
 }

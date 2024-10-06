@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang = "en">
 <head>
     <meta charset="UTF-8">
     <title>About Me Page</title>
@@ -8,30 +8,52 @@
         <link rel="stylesheet" type="text/css" href="mobile.css" media="only screen and (max-width: 600px)">
         <link rel="stylesheet" type="text/css" href="tablet.css" media="only screen and (min-width: 601px) and (max-width: 1024px)">
         <link rel="stylesheet" type="text/css" href="laptop.css" media="only screen and (min-width: 1025px)">
+        <style>
+            /*aligning the text to the middle right*/
+            .middle-right {
+            position: absolute; 
+            top: 50%; 
+            right: 20px; 
+            transform: translateY(-40%); 
+            width: 300px; 
+            text-align: left; 
+            }
+        </style>
 </head>
 <body>
     <header id="header">
+        <!--Navigation Bar-->
         <nav>
             <div class="topnav">
-            <a href="home_page.html">Home</a>
-            <a href="contact.html">Contact</a>
-            <a href="About_me.html">About Me</a>
-            <a href="Projects.html">Projects</a>
+                <a href="index_assignment1.html">Home</a>
+                <a href="contact.html">Contact</a>
+                <a href="About_me.html">About Me</a>
+                <a href="Projects.html">Projects</a>
             </div>
         </nav>
     </header>
     <h1>About Me Page</h1>
+    <!--The video-->
     
-    <video id="myVideo" width="500" height="500" controls>
-        <source src="intro_video.mp4" type="video/mp4">
-        <source src="intro_video.ogg" type="video/ogg">
-        Your browser does not support HTML5 video.
-    </video>
-    
+        <video id="myVideo" width="500" height="500" controls poster="poster-image.jpg">
+            <source src="intro_video.mp4" type="video/mp4">
+            <source src="intro_video.ogg" type="video/ogg">
+       
+        </video>
+        
+
+    <!--Pause and Play Buttons-->
     <br>
     <button onclick="playVid()" type="button">Play Video</button>
     <button onclick="pauseVid()" type="button">Pause Video</button>
+   
+    <p class="middle-right">Hi my name is Fatima and I am currently a student at Ontario Tech University. 
+        The major I am pursuing is Networking and IT Security. The reason I am pursuing this
+         field is because I enjoy learning more about this topic. I also enjoy watching comedy 
+         movies in my free time, while baking sweet treats for my family. 
+        Additionally, I am an adventurous individual who enjoys traveling and going to theme parks.</p>
     
+    <!--The functions to make the pause and play buttons to actually work-->
     <script> 
         let vid = document.getElementById("myVideo"); 
         
@@ -43,6 +65,8 @@
             vid.pause(); 
         } 
     </script> 
+   
+   
     
 </body>
 </html>
